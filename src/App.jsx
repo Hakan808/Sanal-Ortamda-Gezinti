@@ -37,7 +37,7 @@ export default function App() {
         2. Bu görevleri doğru bir şekilde tamamlarsanız, bazı retro, arızalı görsel efektlere sahip bir buton elde etmeli ve konsolda doğru şekilde işlenmiş bir mesaj almalısınız
  */
   const handleClick = (e) => {
-    setUserData({...userData,hasEntered:true,entranceTime:new Date(),clickCoordinates:{offsetX:e.offsetX,offsetY:e.offsetY}})
+    setUserData({...userData,hasEntered:true,entranceTime:new Date(),clickCoordinates:{offsetX:e.nativeEvent.offsetY,offsetY:e.nativeEvent.offsetY}})
   }
   return (
     <div>
